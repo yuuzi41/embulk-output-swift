@@ -77,12 +77,12 @@ task gemspec {
 Gem::Specification.new do |spec|
   spec.name          = "${project.name}"
   spec.version       = "${project.version}"
-  spec.authors       = ["yuuzi"]
-  spec.summary       = %[Swift file output plugin for Embulk]
-  spec.description   = %[Stores files on Swift.]
+  spec.authors       = ["yuuzi41"]
+  spec.summary       = %[OpenStack Swift Object Storage file output plugin for Embulk]
+  spec.description   = %[Stores files on OpenStack Swift.]
   spec.email         = ["yuuzi41@hotmail.com"]
   spec.licenses      = ["MIT"]
-  # TODO set this: spec.homepage      = "https://github.com/yuuzi41/embulk-output-swift"
+  spec.homepage      = "https://github.com/yuuzi41/embulk-output-swift"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r"^(test|spec)/")
